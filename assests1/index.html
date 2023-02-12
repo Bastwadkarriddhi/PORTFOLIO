@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content ="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3039a6076a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <br>
+                    <p>Computer Science Student</p>
+                    <h1>Hi, I am <span>Riddhi Bastwadkar</span></h1>
+                </div>
+            </div>
+        </div>
+        <!------------about-------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="my.jpg" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p> Hi, it's me Riddhi. I am a 3rd sem student studying in KLS Gogte Institute of technology. I love developing websites, and looking forward to become a full-stack developer.I know few front-end technologies like HTML,CSS,Javascipt,Tailwind CSS,Bootstrap. Research also piques my interest and I would love to work on research papers.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick= "opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick= "opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Bootstap</span></li>
+                            <li><span>C</span></li>
+                            <li><span>C++</span></li>
+                            <li><span>Java</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship - Software Tools and technologies<br>2022</span></li>
+                            <li><span>Internship - Data Analytics<br>2022-23</span></li>
+                            <li><span></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School-Divine Providence Convent High School</span></li>
+                        <li><span>PU- Govindaram Seksaria PU College</span></li>
+                        <li><span>KLS Gogte Institute of technology</span></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+ </div>
+ 
+ <!--------services------->
+ <div id="services"></div>
+ <div class="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Student</h2>
+                <img src="icon.png">
+                <p>Student at KLS Gogte Institute of technology</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+ </div>
+
+ <!-----------activities------>
+ <div id="activities"></div>
+<div class="activities">
+    <div class="container">
+        <h1 class="subtitle">My Activities</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="blanket.jpeg">
+                <div class="layer">
+                    <h3>Blanket Donation Drive</h3>
+                    <p>Event head for "Kambali 3.0", a flagship event by Rotract Club of  Belgaum Yuva Darpan</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pl3.jpg">
+                <div class="layer">
+                    <h3>Plantation Drive</h3>
+                    <br>
+                    <p>Active part of the weekly plantation drive organised by Green Saviours association</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="rota.jpeg">
+                <div class="layer">
+                    <h3>Rota Fiesta</h3>
+                    <p>Actively participated in the cultural fests</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" >See more</a>
+    </div>
+</div>
+<!--------contact------>
+<div id="contact"></div>
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa-regular fa-envelope"></i>bastwadkarriddhi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>123455678</p>
+                <div class="social-icons">
+                    <a href="https:fa-linkedin.com//"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://fa-instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Yor Email Id"required>
+                    <textarea name="Message" rows="8" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname)
+            {
+                for(tablink of tablinks )
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+    </body>
+</html>
